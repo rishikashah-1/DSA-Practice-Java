@@ -3,7 +3,7 @@ Problem: Median of Two Sorted Arrays
 Platform: LeetCode
 Difficulty: Hard
 https://leetcode.com/problems/median-of-two-sorted-arrays/?envType=problem-list-v2&envId=array
-Approach: Binary Search Partition
+Approach: Merge Sort
 Time Complexity: O(log(min(n,m)))
 Space Complexity: O(1)
 */
