@@ -1,3 +1,10 @@
+/*
+Title: Inverted Binary Tree
+https://leetcode.com/problems/invert-binary-tree/
+Approach: Binary Tree
+
+/*
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -21,20 +28,13 @@ class Solution {
 
     public TreeNode binary(TreeNode root){
           if(root==null){
-            return;
+            return null;
           }
           TreeNode left=binary(root.left);
           TreeNode right=binary(root.right);
-          if(left==null && right==null){
-            return;
-          }
-          swapping(left,right);
+          root.left=right;
+          root.right=left;
+          return root;
     }
-         public TreeNpde swapping(TreeNode left,TreeNode right){ 
-         TreeNode swap=left;
-         left=right;
-         right=swap;
-         return left,right;
-         }
-    
-} 
+         
+}
